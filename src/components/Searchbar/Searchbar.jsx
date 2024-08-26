@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import './Searchbar.css';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import "./Searchbar.css";
 
 function Searchbar({ onSubmit }) {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setInput(e.target.value);
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(input);
-    setInput('');
+    setInput("");
   };
 
   return (

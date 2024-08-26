@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
-import './ImageGallery.css';
+import React from "react";
+import PropTypes from "prop-types";
+import ImageGalleryItem from "../ImageGalleryItem/ImageGalleryItem";
+import "./ImageGallery.css";
 
 function ImageGallery({ images, onImageClick }) {
   return (
@@ -24,7 +24,7 @@ ImageGallery.propTypes = {
       id: PropTypes.number.isRequired,
       webformatURL: PropTypes.string.isRequired,
       largeImageURL: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
   onImageClick: PropTypes.func.isRequired,
 };
